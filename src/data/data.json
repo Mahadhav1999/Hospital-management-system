@@ -1,0 +1,371 @@
+{
+  "doctors": [
+    {
+      "id": 564,
+      "name": "Dr. Michael Lewis BSc",
+      "gender": {
+        "name": "Male",
+        "key": "M"
+      },
+      "phone": "416-486-1956",
+      "address": "St. Clair Ave Toronto"
+    },
+    {
+      "id": 565,
+      "name": "Dr. Jojo Lewe BSc",
+      "gender": {
+        "name": "Male",
+        "key": "M"
+      },
+      "phone": "516-376-1986",
+      "address": "St. Clair Avy Brooklyn"
+    },
+    {
+      "id": 566,
+      "name": "Dr. Maria Larson MD",
+      "gender": {
+        "name": "Female",
+        "key": "F"
+      },
+      "phone": "126-566-1816",
+      "address": "St. Mayo Park Toronto"
+    },
+    {
+      "id": 567,
+      "name": "Dr. Lauren Lewis MSc",
+      "gender": {
+        "name": "Female",
+        "key": "F"
+      },
+      "phone": "416-486-1956",
+      "address": "St. Clair Ave Toronto"
+    },
+    {
+      "id": 568,
+      "name": "Dr. Michael Lewis Msc",
+      "gender": {
+        "name": "Male",
+        "key": "M"
+      },
+      "phone": "246-486-1676",
+      "address": "St. Clair Ave Toronto"
+    },
+    {
+      "id": 152,
+      "name": "Dr. Sheeja Mathai",
+      "gender": {
+        "name": "Female",
+        "key": "F"
+      },
+      "phone": "647-722-2370",
+      "address": "Steeles Avenue West Vaughan"
+    },
+    {
+      "name": "Dr Bramhanand Deskmukh",
+      "gender": {
+        "name": "Male",
+        "key": "M"
+      },
+      "phone": "912-346-5589",
+      "address": "Bangalore",
+      "id": 569
+    },
+    {
+      "name": "Dr. Brooks Lynn",
+      "gender": {
+        "name": "Male",
+        "key": "M"
+      },
+      "phone": "914-356-7989",
+      "address": "10 th Street Park Avanue , Moscow",
+      "id": 570
+    }
+  ],
+  "patients": [
+    {
+      "id": 1,
+      "FirstName": "John",
+      "LastName": "Smith",
+      "dob": "23-05-1978",
+      "age": 31,
+      "Phone": "209-842-4390",
+      "service_id": 10
+    },
+    {
+      "id": 2,
+      "FirstName": "Mark",
+      "LastName": "Brady",
+      "dob": "21-10-1988",
+      "age": 53,
+      "Phone": "202-315-3477",
+      "service_id": 20
+    },
+    {
+      "id": 3,
+      "FirstName": "Nick",
+      "LastName": "Folks",
+      "dob": "03-03-1958",
+      "age": 45,
+      "Phone": "678-983-9409",
+      "service_id": 30
+    },
+    {
+      "id": 4,
+      "FirstName": "Russel",
+      "LastName": "Wilson",
+      "dob": "31-09-1978",
+      "age": 35,
+      "Phone": "505-547-6813",
+      "service_id": 40
+    },
+    {
+      "id": 5,
+      "FirstName": "Amalia",
+      "LastName": "Watson",
+      "dob": "15-09-1998",
+      "age": 23,
+      "Phone": "216-223-6600",
+      "service_id": 50
+    },
+    {
+      "id": 6,
+      "FirstName": "Duck",
+      "LastName": "Wilson",
+      "dob": "11-05-1968",
+      "age": 19,
+      "Phone": "505-738-8350",
+      "service_id": 60
+    },
+    {
+      "id": 8,
+      "FirstName": "Enola",
+      "LastName": "Holmes",
+      "dob": "16-09-1999",
+      "age": 22,
+      "Phone": "0554522365",
+      "service_id": 80
+    },
+    {
+      "FirstName": "Mr Mayarshito",
+      "LastName": "Kordvosckie",
+      "dob": "2023-01-03",
+      "age": "34",
+      "Phone": "315-430-9876",
+      "id": 9
+    },
+    {
+      "FirstName": "Mario",
+      "LastName": "Lavardo",
+      "dob": "2023-02-01",
+      "age": "23",
+      "Phone": "980-134-2789",
+      "id": 10
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "melany.wijngaard@example.com",
+      "gender": "female",
+      "phone_number": "727-033-9347",
+      "birthdate": 608022796,
+      "city": "staphorst",
+      "username": "bigpeacock217",
+      "password": "eagle",
+      "first_name": "melany",
+      "last_name": "wijngaard",
+      "title": "miss"
+    },
+    {
+      "id": 2,
+      "email": "nanna.pedersen@example.com",
+      "gender": "female",
+      "phone_number": "436-729-9234",
+      "birthdate": 591428535,
+      "city": "aarhus",
+      "username": "purpleduck599",
+      "password": "davids",
+      "first_name": "nanna",
+      "last_name": "pedersen",
+      "title": "ms"
+    },
+    {
+      "id": 3,
+      "email": "amelia.mercier@example.com",
+      "gender": "female",
+      "phone_number": "168-747-5950",
+      "birthdate": 1132298571,
+      "city": "echandens-denges",
+      "username": "whitefrog218",
+      "password": "forest",
+      "first_name": "amelia",
+      "last_name": "mercier",
+      "title": "madame"
+    },
+    {
+      "id": 4,
+      "email": "sarah.oliver@example.com",
+      "gender": "female",
+      "phone_number": "076-814-1654",
+      "birthdate": 1038915780,
+      "city": "manchester",
+      "username": "purplebear893",
+      "password": "boat",
+      "first_name": "sarah",
+      "last_name": "oliver",
+      "title": "ms"
+    },
+    {
+      "id": 5,
+      "email": "jeffrey.myers@example.com",
+      "gender": "male",
+      "phone_number": "449-485-5688",
+      "birthdate": 567993820,
+      "city": "tulsa",
+      "username": "greenswan192",
+      "password": "karate",
+      "first_name": "jeffrey",
+      "last_name": "myers",
+      "title": "mr"
+    },
+    {
+      "id": 6,
+      "email": "özkan.tekelioğlu@example.com",
+      "gender": "male",
+      "phone_number": "074-376-7384",
+      "birthdate": 616226885,
+      "city": "afyonkarahisar",
+      "username": "organiccat298",
+      "password": "coventry",
+      "first_name": "özkan",
+      "last_name": "tekelioğlu",
+      "title": "mr"
+    },
+    {
+      "id": 7,
+      "email": "angela.newman@example.com",
+      "gender": "female",
+      "phone_number": "081-718-3989",
+      "birthdate": 479824115,
+      "city": "celbridge",
+      "username": "smallgorilla567",
+      "password": "1234567",
+      "first_name": "angela",
+      "last_name": "newman",
+      "title": "mrs"
+    },
+    {
+      "id": 8,
+      "email": "buse.dağdaş@example.com",
+      "gender": "female",
+      "phone_number": "855-841-4810",
+      "birthdate": 1316736697,
+      "city": "malatya",
+      "username": "crazypeacock394",
+      "password": "paulie",
+      "first_name": "buse",
+      "last_name": "dağdaş",
+      "title": "ms"
+    },
+    {
+      "id": 9,
+      "email": "judith.schmitz@example.com",
+      "gender": "female",
+      "phone_number": "017-178-2464",
+      "birthdate": 1348121292,
+      "city": "mittweida",
+      "username": "smallcat785",
+      "password": "prissy",
+      "first_name": "judith",
+      "last_name": "schmitz",
+      "title": "miss"
+    },
+    {
+      "id": 10,
+      "email": "hector.guerrero@example.com",
+      "gender": "male",
+      "phone_number": "696-963-9494",
+      "birthdate": 1040720948,
+      "city": "alcobendas",
+      "username": "lazyleopard999",
+      "password": "godfather",
+      "first_name": "hector",
+      "last_name": "guerrero",
+      "title": "mr"
+    },
+    {
+      "id": 11,
+      "email": "carsta.rocha@example.com",
+      "gender": "male",
+      "phone_number": "650-1416-4953",
+      "birthdate": 296641611,
+      "city": "arapongas",
+      "username": "redfish833",
+      "password": "soccer12",
+      "first_name": "carsta",
+      "last_name": "rocha",
+      "title": "mr"
+    },
+    {
+      "id": 12,
+      "email": "irene.morales@example.com",
+      "gender": "female",
+      "phone_number": "625-790-9582",
+      "birthdate": 513983644,
+      "city": "lorca",
+      "username": "goldenfish109",
+      "password": "field",
+      "first_name": "irene",
+      "last_name": "morales",
+      "title": "mrs"
+    },
+    {
+      "id": 13,
+      "email": "laly.dasilva@example.com",
+      "gender": "female",
+      "phone_number": "082-419-9335",
+      "birthdate": 1123776172,
+      "city": "villars-le-terroir",
+      "username": "bluebird274",
+      "password": "design",
+      "first_name": "laly",
+      "last_name": "da silva",
+      "title": "mademoiselle"
+    },
+    {
+      "id": 14,
+      "email": "benjamin.patel@example.com",
+      "gender": "male",
+      "phone_number": "788-424-7144",
+      "birthdate": 929834606,
+      "city": "masterton",
+      "username": "beautifulbear427",
+      "password": "cartman",
+      "first_name": "benjamin",
+      "last_name": "patel",
+      "title": "mr"
+    },
+    {
+      "id": 15,
+      "email": "noah.poulsen@example.com",
+      "gender": "male",
+      "phone_number": "537-052-4489",
+      "birthdate": 1314124015,
+      "city": "nr åby",
+      "username": "purplesnake503",
+      "password": "zelda",
+      "first_name": "noah",
+      "last_name": "poulsen",
+      "title": "mr"
+    },
+    {
+      "first_name": "Amelia",
+      "last_name": "James ",
+      "username": "amelia",
+      "email": "amelia@gmail.com",
+      "city": "Las Vegas",
+      "phone_number": "419-067-3728",
+      "id": 16
+    }
+  ]
+}

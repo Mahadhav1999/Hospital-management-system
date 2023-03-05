@@ -1,0 +1,7 @@
+.hero{
+    background-image:url(../Images/bg-2.jpg);
+    height: 119vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:right center;
+  }
