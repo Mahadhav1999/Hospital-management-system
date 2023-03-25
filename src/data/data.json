@@ -79,27 +79,19 @@
       "phone": "914-356-7989",
       "address": "10 th Street Park Avanue , Moscow",
       "id": 570
+    },
+    {
+      "name": "Dr. Shushma",
+      "gender": {
+        "name": "Female",
+        "key": "F"
+      },
+      "phone": "987-637-6736",
+      "address": "Unkraine YB Kivyv",
+      "id": 571
     }
   ],
   "patients": [
-    {
-      "id": 1,
-      "FirstName": "John",
-      "LastName": "Smith",
-      "dob": "23-05-1978",
-      "age": 31,
-      "Phone": "209-842-4390",
-      "service_id": 10
-    },
-    {
-      "id": 2,
-      "FirstName": "Mark",
-      "LastName": "Brady",
-      "dob": "21-10-1988",
-      "age": 53,
-      "Phone": "202-315-3477",
-      "service_id": 20
-    },
     {
       "id": 3,
       "FirstName": "Nick",
@@ -160,6 +152,14 @@
       "age": "23",
       "Phone": "980-134-2789",
       "id": 10
+    },
+    {
+      "FirstName": "Mr. Alex",
+      "LastName": "Oogwey",
+      "dob": "1976-08-23",
+      "age": "70",
+      "Phone": "123-456-7890",
+      "id": 11
     }
   ],
   "users": [

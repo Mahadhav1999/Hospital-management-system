@@ -38,14 +38,13 @@ const UserLogin = () => {
     }
     return (
         <>
-        <Helmet>
-            <title>Login | User - Hospital Management System</title>
-            <meta name="description" content="Login to user account to access the user page or the dashboard"/>
-            <link rel="canonical" href="/auth/user/login" />
+            <Helmet>
+                <title>Login | User - Hospital Management System</title>
+                <meta name="description" content="Login to user account to access the user page or the dashboard" />
+                <link rel="canonical" href="/auth/user/login" />
 
-        </Helmet>
-        <div class="block-content">
-            <div>
+            </Helmet>
+            <div class="block-content">
                 <div class="flex">
                     <div class="surface-section w-full md:w-6 p-6 md:p-8">
                         <div class="mb-5">
@@ -81,11 +80,11 @@ const UserLogin = () => {
                                         <i className="pi pi-eye"></i>
                                     </span>
                                     <InputText
-                                    type='password'
-                                    placeholder="Password"
-                                    value={password}
-                                    onChange={(e)=>setPassword(e.target.value)}
-                                     />
+                                        type='password'
+                                        placeholder="Password"
+                                        value={password}
+                                        onChange={(e) => setPassword(e.target.value)}
+                                    />
                                 </div>
                             </div>
                             {/* <input id="password2"
@@ -95,7 +94,7 @@ const UserLogin = () => {
                                 placeholder="Enter password" class="p-inputtext p-component w-full mb-3" /> */}
 
                             <button aria-label="Sign In" class="p-button p-component w-full mt-3"
-                                style={{ fontFamily: 'Poppins,sans serif',fontWeight:'200' }}
+                                style={{ fontFamily: 'Poppins,sans serif', fontWeight: '200' }}
                             >
                                 <span class="p-button-icon p-c p-button-icon-left pi pi-user"></span>
                                 <span class="p-button-label p-c">Sign in user</span>
@@ -108,7 +107,6 @@ const UserLogin = () => {
                     </div>
                 </div>
             </div>
-        </div>
         </>
     )
 }
