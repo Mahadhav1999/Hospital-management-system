@@ -13,7 +13,6 @@ const DoctorLogin = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validate()) {
-
         }
 
     }

@@ -1,13 +1,27 @@
-
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menubar } from 'primereact/menubar';
 import { Button } from 'primereact/button';
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { DataTable } from 'primereact/datatable';
+import { Column } from 'primereact/column';
+import { Dialog } from 'primereact/dialog';
 
 
 const DoctorNavbar = () => {
-    const navigate = useNavigate()
+    const [doctors, setDoctors] = useState([]);
+    const [dialogVisible, setDialogVisible] = useState(false);
+    const navigate = useNavigate();
+
+    const getDoctors = async () => {
+        let res = await fetch('http://localhost:4000/doctors')
+        let data = await res.json();
+        setDoctors(data)
+    }
+
+    useEffect(() => {
+        getDoctors();
+    }, [doctors]);
 
 
     const handleLogout = () => {
@@ -15,23 +29,27 @@ const DoctorNavbar = () => {
         navigate('/')
     }
 
+    const dialogFooterTemplate = () => {
+        return <Button label="Ok" icon="pi pi-check" onClick={() => setDialogVisible(false)} />;
+    };
+
 
     const items = [
         {
             label: 'View Doctors',
             icon: 'pi pi-fw pi-briefcase',
-            command: () => { navigate('list/doctors') }
+            command: () => { setDialogVisible(true) }
         },
         {
             label: 'View Patient',
             icon: 'pi pi-fw pi-user-plus',
-            command: () => { navigate('list/patients') }
+            // command: () => { setDialogVisible(true) }
         },
 
         {
             label: 'View Users',
             icon: 'pi pi-fw pi-users',
-            command: () => { navigate('list/users') }
+            // command: () => { setDialogVisible(true) }
         },
     ];
 
@@ -75,6 +93,33 @@ const DoctorNavbar = () => {
                     </div>
                 </div>
             </div>
+            <Dialog 
+            header="Doctors List Data" 
+            visible={dialogVisible} 
+            style={{ width: '75vw' }} 
+            maximizable
+            modal 
+            contentStyle={{ height: '300px' }} 
+            onHide={() => setDialogVisible(false)} 
+            footer={dialogFooterTemplate}
+            >
+                <DataTable 
+                value={doctors} 
+                scrollable 
+                scrollHeight="flex" 
+                tableStyle={{ minWidth: '50rem' }}
+                >
+                    <Column field="id" header="Id"></Column>
+                    <Column field="name" header="Name"></Column>
+                    <Column field="gender.name" header="Gender"></Column>
+                    <Column field="phone" header="Phone"></Column>
+                    <Column field="address" header="Address"></Column>
+                </DataTable>
+            </Dialog>
+
+
+
+            
         </>
     );
 }

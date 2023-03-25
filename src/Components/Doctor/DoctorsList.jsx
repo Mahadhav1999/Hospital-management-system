@@ -72,7 +72,7 @@ const DoctorsList = (props) => {
     const renderHeader = () => {
         return (
             <div className="flex justify-content-between align-items-center">
-                <h4 className="m-0 text-blue-500" >Doctors List </h4>
+                <h4 className="m-0 text-blue-500" >Doctors List {doctors?.length} </h4>
                 <span className="p-input-icon-left">
                     <i className="pi pi-search" />
                     <InputText
