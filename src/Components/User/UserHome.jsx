@@ -1,7 +1,6 @@
 import React from 'react'
 import { Tooltip } from 'primereact/tooltip';
 import { Divider } from 'primereact/divider';
-import {Link} from "react-router-dom";
 
 const UserHome = () => {
   const [doctorsData, setDoctorsData] = React.useState();

@@ -13,7 +13,6 @@ const DoctorNavbar = () => {
     const [patients, setPatients] = useState([]);
     const [users, setUsers] = useState([]);
 
-    const [dialogVisible, setDialogVisible] = useState(false);
     const [doctorsDialogVisible, setDoctorsDialogVisible] = useState(false);
     const [patientsDialogVisible, setPatientsDialogVisible] = useState(false);
     const [usersDialogVisible, setUsersDialogVisible] = useState(false);
@@ -51,9 +50,7 @@ const DoctorNavbar = () => {
         navigate('/')
     }
 
-    const dialogFooterTemplate = () => {
-        return <Button label="Ok" icon="pi pi-check" onClick={() => setDialogVisible(false)} />;
-    };
+    
 
 
     const items = [
