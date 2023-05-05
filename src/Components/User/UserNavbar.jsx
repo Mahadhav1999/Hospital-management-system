@@ -50,9 +50,6 @@ const DoctorNavbar = () => {
         navigate('/')
     }
 
-    
-
-
     const items = [
         {
             label: 'View Doctors',
@@ -94,9 +91,7 @@ const DoctorNavbar = () => {
                 onClick={handleLogout}
                 className='p-button-outlined'
             />
-
         </>
-
 
     return (
         <>
