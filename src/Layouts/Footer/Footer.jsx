@@ -17,8 +17,10 @@ const Footer = () => {
                                 <img src="https://sev.severance.healthcare/_res/yuhs/sev-en/img/common/logo@2x.png" alt="footer logo" height="50" />
                                 </Link>
 
-                                <div className="mt-2 line-height-3">© 2022-23 Hospital Management System, Inc. All rights are reserved. Made with 
-                                <span className="text-red-500 mx-1">&#10084;</span>
+                                <div className="mt-2 line-height-3">© 2022-23 Hospital Management System, Inc. All rights are reserved. Made with ❤️
+                                <span className="mx-1">By
+                                    <a className="mx-1 no-underline" href='https://github.com/Mahadhav1999' target='_blank' rel='noreferrer'>Mahadev</a>
+                                </span>
                                 </div>
                             </div>
                             <div className="mt-3 sm:mt-0">

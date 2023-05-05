@@ -10,7 +10,14 @@ import { Dialog } from 'primereact/dialog';
 
 const DoctorNavbar = () => {
     const [doctors, setDoctors] = useState([]);
+    const [patients, setPatients] = useState([]);
+    const [users, setUsers] = useState([]);
+
     const [dialogVisible, setDialogVisible] = useState(false);
+    const [doctorsDialogVisible, setDoctorsDialogVisible] = useState(false);
+    const [patientsDialogVisible, setPatientsDialogVisible] = useState(false);
+    const [usersDialogVisible, setUsersDialogVisible] = useState(false);
+
     const navigate = useNavigate();
 
     const getDoctors = async () => {
@@ -19,9 +26,24 @@ const DoctorNavbar = () => {
         setDoctors(data)
     }
 
+    const getPatientsData = async () => {
+        let res = await fetch('http://localhost:4000/patients')
+        let data = await res.json();
+        setPatients(data)
+    }
+
+    const getUsersData = async () => {
+        let res = await fetch('http://localhost:4000/users')
+        let data = await res.json();
+        console.log(data)
+        setUsers(data)
+    }
+
     useEffect(() => {
         getDoctors();
-    }, [doctors]);
+        getPatientsData()
+        getUsersData()
+    }, []);
 
 
     const handleLogout = () => {
@@ -38,18 +60,18 @@ const DoctorNavbar = () => {
         {
             label: 'View Doctors',
             icon: 'pi pi-fw pi-briefcase',
-            command: () => { setDialogVisible(true) }
+            command: () => { setDoctorsDialogVisible(true) }
         },
         {
             label: 'View Patient',
             icon: 'pi pi-fw pi-user-plus',
-            // command: () => { setDialogVisible(true) }
+             command: () => { setPatientsDialogVisible(true) }
         },
 
         {
             label: 'View Users',
             icon: 'pi pi-fw pi-users',
-            // command: () => { setDialogVisible(true) }
+             command: () => { setUsersDialogVisible(true) }
         },
     ];
 
@@ -95,13 +117,12 @@ const DoctorNavbar = () => {
             </div>
             <Dialog 
             header="Doctors List Data" 
-            visible={dialogVisible} 
+            visible={doctorsDialogVisible}
             style={{ width: '75vw' }} 
             maximizable
             modal 
             contentStyle={{ height: '300px' }} 
-            onHide={() => setDialogVisible(false)} 
-            footer={dialogFooterTemplate}
+            onHide={() => setDoctorsDialogVisible(false)}
             >
                 <DataTable 
                 value={doctors} 
@@ -114,6 +135,55 @@ const DoctorNavbar = () => {
                     <Column field="gender.name" header="Gender"></Column>
                     <Column field="phone" header="Phone"></Column>
                     <Column field="address" header="Address"></Column>
+                </DataTable>
+            </Dialog>
+
+            <Dialog
+                header="Patients List Data"
+                visible={patientsDialogVisible}
+                style={{ width: '75vw' }}
+                maximizable
+                modal
+                contentStyle={{ height: '300px' }}
+                onHide={() => setPatientsDialogVisible(false)}
+            >
+                <DataTable
+                    value={patients}
+                    scrollable
+                    scrollHeight="flex"
+                    tableStyle={{ minWidth: '50rem' }}
+                >
+                    <Column field="id" header="Patient ID"></Column>
+                    <Column field="FirstName" header="First Name"></Column>
+                    <Column field="LastName" header="Last Name"></Column>
+                    <Column field="dob" header="Date of Birth"></Column>
+                    <Column field="age" header="Age"></Column>
+                    <Column field="Phone" header="Phone Number"></Column>
+                </DataTable>
+            </Dialog>
+
+            <Dialog
+                header="Users List Data"
+                visible={usersDialogVisible}
+                style={{ width: '75vw' }}
+                maximizable
+                modal
+                contentStyle={{ height: '300px' }}
+                onHide={() => setUsersDialogVisible(false)}
+            >
+                <DataTable
+                    value={users}
+                    scrollable
+                    scrollHeight="flex"
+                    tableStyle={{ minWidth: '50rem' }}
+                >
+                    <Column field="id" header="Id"></Column>
+                    <Column field="first_name" header="First Name"></Column>
+                    <Column field="last_name" header="Last Name"></Column>
+                    <Column field="username" header="Username"></Column>
+                    <Column field="email" header="Email"></Column>
+                    <Column field="city" header="City"></Column>
+                    <Column field="phone_number" header="Phone Number"></Column>
                 </DataTable>
             </Dialog>
 

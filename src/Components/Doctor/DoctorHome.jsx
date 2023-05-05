@@ -68,11 +68,13 @@ const DoctorHome = () => {
                   </div>
                 </div>
                 <div className="mt-3 lg:mt-0">
-                  <button aria-label="Follow" className="p-button p-component p-button-outlined mr-2" fdprocessedid="bttnzf">
-                    <span className="p-button-icon p-c p-button-icon-left pi pi-plus-circle"></span>
-                    <span className="p-button-label p-c">Follow</span>
-                    <span role="presentation" className="p-ink"></span>
-                  </button>
+                  <a href='https://github.com/Mahadhav1999' target='_blank' rel='noreferrer'>
+                    <button aria-label="Follow" className="p-button p-component p-button-outlined mr-2">
+                      <span className="p-button-icon p-c p-button-icon-left pi pi-plus-circle"></span>
+                      <span className="p-button-label p-c">Follow</span>
+                      <span role="presentation" className="p-ink"></span>
+                    </button>
+                  </a>
                   <button aria-label="Website" className="p-button p-component mr-2" fdprocessedid="2c3qq">
                     <span className="p-button-icon p-c p-button-icon-left pi pi-link"></span>
                     <span className="p-button-label p-c">Website</span>
